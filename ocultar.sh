@@ -1,4 +1,4 @@
 IFS=$'\n'
-for f in $(ls input); do
-  echo $f
+for f in output/50/*.jpg; do
+  steghide embed -cf $f -ef inputOcultar/Prueba50.txt -p test
 done
