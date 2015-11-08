@@ -7,5 +7,6 @@ done;
 
 IFS=$'\n'
 for f in output/150/*.jpg; do
+  echo $f
   steghide extract -sf $f -p test
 done
